@@ -1,0 +1,33 @@
+/* style.css */
+
+/* Custom Hover Effects for Navbar */
+.nav-link:hover {
+  color: #4f46e5; /* Indigo-600 */
+  transition: color 0.3s ease;
+}
+
+/* Ensure footer sticks to bottom if content is short */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Custom Scrollbar for a polished look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

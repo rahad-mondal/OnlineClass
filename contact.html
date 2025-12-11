@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Home</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar bg-base-100 shadow-md sticky top-0 z-50">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact1.html">contact2</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl uppercase font-bold text-primary"
+          >MyPortfolio</a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact1.html" class="nav-link">contact2</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="contact.html" class="btn btn-primary btn-sm">Hire Me</a>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold uppercase">Contact Me</h1>
+        <div class="divider w-24 mx-auto"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-10">
+        <div class="lg:w-1/3 space-y-6">
+          <div class="card bg-base-100 shadow-xl border border-base-200">
+            <div class="card-body">
+              <h2 class="card-title">Get In Touch</h2>
+              <p class="mb-4">
+                Feel free to reach out for any project or collaboration.
+              </p>
+
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-primary">Email:</span>
+                <span>info@example.com</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-primary">Phone:</span>
+                <span>+123 456 7890</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-primary">Address:</span>
+                <span>123 Web Street, City, Country</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full h-64 bg-gray-200 rounded-xl overflow-hidden shadow-lg"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.0612954421335!2d89.133237176197!3d24.9980330778397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcf3809b99754f%3A0xdac6478816de2fd3!2z4Ka54Ka_4Kao4KeN4Kam4Ka-IOCmleCmuOCmrOCmviDgprbgpr7gprngp4Ag4Kau4Ka44Kac4Ka_4Kam!5e0!3m2!1sen!2sbd!4v1765458768186!5m2!1sen!2sbd"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="lg:w-2/3">
+          <div class="card bg-base-100 shadow-2xl">
+            <div class="card-body">
+              <h2 class="text-2xl font-bold mb-4">Send a Message</h2>
+              <form id="contactForm" novalidate>
+                <div class="form-control mb-4">
+                  <label class="label"
+                    ><span class="label-text">Full Name</span></label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="John Doe"
+                    class="input input-bordered w-full"
+                  />
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div class="form-control">
+                    <label class="label"
+                      ><span class="label-text">Email</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="email@example.com"
+                      class="input input-bordered w-full"
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label"
+                      ><span class="label-text">Phone</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="+123..."
+                      class="input input-bordered w-full"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-control mb-4">
+                  <label class="label"
+                    ><span class="label-text">Address</span></label
+                  >
+                  <input
+                    type="text"
+                    id="address"
+                    placeholder="Your Address"
+                    class="input input-bordered w-full"
+                  />
+                </div>
+
+                <div class="form-control mb-6">
+                  <label class="label"
+                    ><span class="label-text">Message</span></label
+                  >
+                  <textarea
+                    id="message"
+                    class="textarea textarea-bordered h-24"
+                    placeholder="Your message here..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="footer footer-center p-10 bg-base-300 text-base-content rounded mt-auto"
+    >
+      <div class="grid grid-flow-col gap-4">
+        <a href="about.html" class="link link-hover">About us</a>
+        <a href="contact.html" class="link link-hover">Contact</a>
+        <a href="portfolio.html" class="link link-hover">Portfolio</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current"
+          >
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <p>Copyright © 2024 - All right reserved</p>
+        <p class="font-bold text-primary">
+          Current Time: <span id="live-time">Loading...</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
